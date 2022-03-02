@@ -3,7 +3,7 @@ Algoritmo criado em Python para solucionar o problema abaixo:
 "Questão 03 - Duas palavras podem ser consideradas anagramas de si mesmas se as letras de uma palavra podem ser realocadas para formar a outra palavra. Dada uma string qualquer, desenvolva um algoritmo que encontre o número de pares de substrings que são anagramas."
 
 
-Proposta de solução
+<h2>Proposta de solução</h2>
 
 Após ler uma sequência de caracteres digitada pelo usuário, e armazená-la na variável global "palavra", a função "fatiamento(string)" é chamada. Nela é operado o fatiamento da string original em todas as suas substrings, e que ficarão armazenadas em formato de lista na variável global "substrings".
 
@@ -16,8 +16,10 @@ Após ler uma sequência de caracteres digitada pelo usuário, e armazená-la na
  Finalmente, com a função "print(len(anagramas))" é exibido na tela o número de pares de substrings que são anagramas.
 
 
-Para rodar a aplicação, siga a instruções abaixo:
-1 - Instale a última versão do Python;
-2 - Baixe o arquivo com o nosso algoritmo;
-3 - Clique com o botão direito no arquivo baixado e selecione a opção "Edit with IDLE";
-4 - Com o IDLE aberto, pressione a tecla F5 para rodar a aplicação.
+<h2>Para rodar a aplicação, siga a instruções abaixo:</h2>
+<ol>
+    <li>Instale a última versão do Python;</li>
+    <li>Baixe o arquivo com o nosso algoritmo;</li>
+    <li>Clique com o botão direito do mouse no arquivo baixado e selecione a opção "Edit with IDLE";</li>
+    <li>Com o IDLE aberto, pressione a tecla F5 para rodar a aplicação.</li>
+</ol>
