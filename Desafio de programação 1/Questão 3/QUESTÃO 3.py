@@ -34,12 +34,10 @@ def compara_substrings(a, b):
 
 def busca_anagramas(substrings):
     for i in range(len(substrings)):
-        a = substrings[i]
         for j in range(len(substrings)-1, i, -1):
-            b = substrings[j]
-            if a != b and len(a) == len(b) and [b, a] not in anagramas:
-                if compara_substrings(a, b):
-                    anagramas.append([a, b])
+            if len(substrings[i]) == len(substrings[j]):
+                if compara_substrings(substrings[i], substrings[j]):
+                    anagramas.append([substrings[i], substrings[j]])
 
 
 palavra = input('Digite uma palavra: ')
