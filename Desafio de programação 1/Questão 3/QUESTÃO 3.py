@@ -33,10 +33,10 @@ def compara_substrings(a, b):
 
 
 def busca_anagramas(substrings):
-    for substring in substrings:
-        a = substring
-        for i in range(len(substrings)):
-            b = substrings[i]
+    for i in range(len(substrings)):
+        a = substrings[i]
+        for j in range(len(substrings)-1, i, -1):
+            b = substrings[j]
             if a != b and len(a) == len(b) and [b, a] not in anagramas:
                 if compara_substrings(a, b):
                     anagramas.append([a, b])
