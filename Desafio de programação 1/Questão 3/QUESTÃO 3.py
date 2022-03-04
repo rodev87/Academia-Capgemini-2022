@@ -1,13 +1,9 @@
 def fatiamento(string):
     lista_fatias = []
-    fim = 1
-    while fim <= len(string):
-        for inicio in range(len(string)):
-            if inicio < fim:
-                fatia = string[inicio:fim]
-                if fatia != string and fatia not in lista_fatias:
-                    lista_fatias.append(fatia)
-        fim += 1
+    for i in range(len(string)):
+        for j in range(len(string), i, -1):
+            if string[i:j] != string and string[i:j] not in lista_fatias:
+                lista_fatias.append(string[i:j])
     return lista_fatias
 
 
