@@ -10,7 +10,7 @@ Algoritmo criado em Python para solucionar o problema abaixo:
 
 Para solucionar o problema, criamos a função calc_mediana( ), que ao receber uma lista de elementos numéricos como parâmetro:
 <ul>
-    <li>ordena a lista utilizando o método embutido list.sort(); </li>
+    <li>ordena a lista utilizando o método embutido list.sort( ); </li>
     <li>calcula a divisão inteira de lenght de lista por 2, atribuindo o resultado à variável local i, que servirá de índice; </li>
     <li>e devolve o valor armazenado no índice i da lista (que é a mediana).</li>
  </ul>
@@ -22,7 +22,7 @@ def calc_mediana(arr):
     i = len(arr)//2
     return arr[i]
 ```
-Para a realização dos testes, foram criadas no escopo global a variável "arr", que armazena a lista de números, e a variável "mediana", responsável por chamar a função calc_mediana( ) e armazenar o valor devolvido. Por fim, a função print imprime a mediana:
+Para a realização dos testes, foram criadas no escopo global a variável "arr", que armazena a lista de números, e a variável "mediana", responsável por chamar a função calc_mediana( ), bem como armazenar o valor devolvido pela função. Por fim, a função print( ) exibe a mediana:
 
 
 ```Python
