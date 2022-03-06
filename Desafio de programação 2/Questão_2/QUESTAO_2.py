@@ -15,7 +15,7 @@ def compara_itens(n, x):
 
                 # Se a função de verificação retornar verdadeiro,
                 # os pares serão incluídos na variável local lista.
-                # Ao final da execução, a função devolverá  o lenght de
+                # Ao final da execução, a função devolverá o lenght de
                 # lista, que é a quantidade de pares identificados:
                 if verifica_xpositivo(n[i], n[j]):
                     lista.append([n[i], n[j]])

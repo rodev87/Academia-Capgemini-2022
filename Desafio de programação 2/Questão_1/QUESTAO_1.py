@@ -13,21 +13,21 @@ def calc_mediana(arr):
     return arr[i]
 
 
-# Testes
+# Teste 1
 print(f"{'-='*8}Teste 1{'=-'*8}\nEntrada:\narr = [7, 3, 1, 9, 6, 101, 33, 20, 2]\n")
 
 arr = [7, 3, 1, 9, 6, 101, 33, 20, 2]
 mediana = calc_mediana(arr)
 print(f'Saída:\n{mediana}')
 
-
+# Teste 2
 print(f"{'-='*8}Teste 2{'=-'*8}\nEntrada:\narr = [9, 2, 1, 4, 6]\n")
 
 arr = [9, 2, 1, 4, 6]
 mediana = calc_mediana(arr)
 print(f'Saída:\n{mediana}')
 
-
+# Teste 3
 print(f"{'-='*8}Teste 3{'=-'*8}\nEntrada:\narr = [1, 5, 3, 6, 2, 10, 7]\n")
 
 arr = [1, 5, 3, 6, 2, 10, 7]
