@@ -1,6 +1,4 @@
-# https://docs.google.com/document/d/e/2PACX-1vRrSJORROEeHhNOmTuKxwlnC9APumr1C_k365WH3zVlryBy3KnvvZPnSmulijLktw/pub
-
-def analisa_vetor(vetor, x):
+def analisa_vetor(n, x):
     lista = []
     for i in range(len(n)):
         for j in range(len(n)-1, i, -1):
@@ -13,15 +11,16 @@ def analisa_vetor(vetor, x):
     return lista
 
 
-n = []
-continua = 's'
-while continua != 'n':
-    a = int(input('Por favor, digite um número para incluir no vetor: '))
-    n.append(a)
-    continua = input("Deseja incluir mais números? (s/n): ")
-
-x = int(input('Por favor, defina um valor para x: '))
+print('Teste 1\n\nEntrada:\nn = [1, 5, 3, 4, 2]\nx = 2\n')
+n = [1, 5, 3, 4, 2]
+x = 2
 pares = analisa_vetor(n, x)
+print(f'Saída:\n{len(pares)}')
+print('-------------------------------------\n')
 
-print(len(pares))
-print(pares)
+print('Teste 2\n\nEntrada:\nn = [9, 2, 1, 4, 6]\nx = 3\n')
+n = [9, 2, 1, 4, 6]
+x = 3
+pares = analisa_vetor(n, x)
+print(f'Saída:\n{len(pares)}')
+print('-------------------------------------\n')

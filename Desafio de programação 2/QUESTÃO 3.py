@@ -13,12 +13,20 @@ def encript(s):
     return matriz
 
 
-print('Teste 1: tenha um bom dia')
+print('Teste 1\n\nEntrada:\ns = tenha um bom dia\n')
 s = 'tenha um bom dia'
+print('Saída:')
 print(*encript(s))
+print('---------------------------\n')
 
-print('--------------------------')
-
-print('Teste 2: ola mundo')
+print('Teste 2\n\nEntrada:\ns = ola mundo\n')
 s = 'ola mundo'
+print('Saída:')
 print(*encript(s))
+print('---------------------------\n')
+
+print('Teste 3\n\nEntrada:\ns = Academia Capgemini 2022\n')
+s = 'Academia Capgemini 2022'
+print('Saída:')
+print(*encript(s))
+print('---------------------------\n')
