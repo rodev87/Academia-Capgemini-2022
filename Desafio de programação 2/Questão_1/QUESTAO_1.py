@@ -1,5 +1,5 @@
-# Função que ordena a lista recebida,
-# calcula e devolve a sua mediana.
+# Função que, após ordenar a lista recebida,
+# calcula e devolve a sua mediana:
 def calc_mediana(arr):
     # Ordenação da lista "arr" com o método embutido sort():
     arr.sort()
@@ -8,10 +8,12 @@ def calc_mediana(arr):
     # atribuindo o resultado à variável local i, que servirá de índice:
     i = len(arr)//2
 
-    # A função devolve o valor armazenado no índice i de "arr":
+    # A função devolve o valor armazenado no
+    # índice i de "arr", que é a mediana:
     return arr[i]
 
 
+# Testes
 print(f"{'-='*8}Teste 1{'=-'*8}\nEntrada:\narr = [7, 3, 1, 9, 6, 101, 33, 20, 2]\n")
 
 arr = [7, 3, 1, 9, 6, 101, 33, 20, 2]
