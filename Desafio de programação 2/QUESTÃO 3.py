@@ -1,15 +1,24 @@
-import math
+from math import sqrt, ceil
 
-s = input('Digite a frase que deseja encriptar: ')
 
-t = s.replace(" ", "")
-passo = math.ceil(math.sqrt(len(t)))
-tamanho = len(t)
-grid = []
-for i in range(passo):
-    lista = []
-    for j in range(i, len(t), passo):
-        lista.append(t[j])
-    grid.append("".join(lista))
+def encript(s):
+    t = s.replace(" ", "")
+    raiz_de_t = ceil(sqrt(len(t)))
+    matriz = []
+    for i in range(raiz_de_t):
+        linha = []
+        for j in range(i, len(t), raiz_de_t):
+            linha.append(t[j])
+        matriz.append("".join(linha))
+    return matriz
 
-print(*grid)
+
+print('Teste 1: tenha um bom dia')
+s = 'tenha um bom dia'
+print(*encript(s))
+
+print('--------------------------')
+
+print('Teste 2: ola mundo')
+s = 'ola mundo'
+print(*encript(s))
