@@ -20,20 +20,20 @@ def agrupa(substrings):
     return agrupa_subs
 
 
-def compara_substrings(a, b):
-    cont = 0
-    for i in range(len(a)):
-        if a.count(a[i]) == b.count(a[i]):
-            cont += 1
-    return len(a) == cont
-
-
 def busca_anagramas(substrings):
     for i in range(len(substrings)):
         for j in range(len(substrings)-1, i, -1):
             if len(substrings[i]) == len(substrings[j]):
                 if compara_substrings(substrings[i], substrings[j]):
                     anagramas.append([substrings[i], substrings[j]])
+
+
+def compara_substrings(a, b):
+    cont = 0
+    for i in range(len(a)):
+        if a.count(a[i]) == b.count(a[i]):
+            cont += 1
+    return len(a) == cont
 
 
 palavra = input('Digite uma palavra: ')
