@@ -56,7 +56,11 @@ def compara_substrings(a, b):
     return len(a) == cont
 ```
 
- Por fim, com uma combinação de duas funções embutidas do Python "print(len(anagramas))", é exibido na tela o número de pares de substrings que são anagramas.
+ Por fim, com uma combinação de duas funções embutidas do Python, é exibido na tela o número de pares de substrings que são anagramas.
+
+ ```Python
+ print(len(anagramas))
+ ```
 
 
 <h2>Para rodar a aplicação, siga a instruções abaixo:</h2>
