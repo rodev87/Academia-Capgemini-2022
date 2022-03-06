@@ -1,13 +1,15 @@
+<h1>Questão 03</h1>
+
 Algoritmo criado em Python para solucionar o problema abaixo:
 
-"Questão 03 - Duas palavras podem ser consideradas anagramas de si mesmas se as letras de uma palavra podem ser realocadas para formar a outra palavra. Dada uma string qualquer, desenvolva um algoritmo que encontre o número de pares de substrings que são anagramas."
+"Duas palavras podem ser consideradas anagramas de si mesmas se as letras de uma palavra podem ser realocadas para formar a outra palavra. Dada uma string qualquer, desenvolva um algoritmo que encontre o número de pares de substrings que são anagramas."
 
 
 <h2>Proposta de solução</h2>
 
 Após ler uma sequência de caracteres digitada pelo usuário, e armazená-la na variável global "palavra", a função "fatiamento(string)" é chamada. Nela é operado o fatiamento da string original em todas as suas substrings, e que ficarão armazenadas em formato de lista na variável global "substrings".
 
-```
+```Python
 def fatiamento(string):
     lista_fatias = []
     for i in range(len(string)):
@@ -21,7 +23,7 @@ def fatiamento(string):
  
  As substrings com mais de uma ocorrência serão agrupadas com seus pares e armazenadas em formato de lista na variável local "agrupa_subs", que é devolvida pela função e armazenada na variável global "anagramas".
 
- ```
+```Python
  def agrupa(substrings):
     agrupa_subs = []
     for substring in substrings:
@@ -37,8 +39,8 @@ def fatiamento(string):
  
  Em seguida, a função "busca_anagramas(substrings)" é chamada para identificar substrings de mesmo tamanho, mas diferentes entre si. Uma estrutura de repetição encadeada busca pelas substrings de mesmo tamanho e chama a função "compara_substrings(a, b)", que irá comparar as quantidades de ocorrências de cada item do par de substrings. Se os itens aparecerem de forma proporcional em ambas as substrings, isto significa que são anagramas, e serão armazenadas em pares na lista da variável global "anagramas".
 
- ```
- def busca_anagramas(substrings):
+```Python
+def busca_anagramas(substrings):
     for i in range(len(substrings)):
         for j in range(len(substrings)-1, i, -1):
             if len(substrings[i]) == len(substrings[j]):
