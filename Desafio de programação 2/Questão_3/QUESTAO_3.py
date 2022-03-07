@@ -3,7 +3,6 @@
 from math import sqrt, ceil
 
 
-
 def encript(s):
     # Remove os espaços da string "s" com o método replace()
     # O texto assim obtido é armazenado na variável "t":
@@ -15,8 +14,8 @@ def encript(s):
 
     matriz = []
 
-    # Percorre a string "t" por meio de uma estrutura de repetição aninhada cujo
-    # passo é "raiz_de_t", agrupando assim os itens de "t" em listas que
+    # Percorre a string "t" por meio de uma estrutura de repetição aninhada,
+    # cujo passo é "raiz_de_t", agrupando os itens de "t" em listas que
     # irão representar as colunas do grid descrito no enunciado:
     for i in range(raiz_de_t):
         coluna = []

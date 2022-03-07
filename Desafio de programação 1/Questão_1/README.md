@@ -2,7 +2,7 @@
 
 Algoritmo criado em Python para solucionar o problema abaixo:
 
-"Escreva um algoritmo que mostre na tela uma escada de tamanho n utilizando o caractere * e espaços. A base e altura da escada devem ser iguais ao valor de n. A última linha não deve conter nenhum espaço."
+<i>"Escreva um algoritmo que mostre na tela uma escada de tamanho n utilizando o caractere * e espaços. A base e altura da escada devem ser iguais ao valor de n. A última linha não deve conter nenhum espaço."</i>
 
 
 <h2>Proposta de solução</h2>

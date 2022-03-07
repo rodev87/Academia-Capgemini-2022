@@ -13,7 +13,7 @@ Algoritmo criado em Python para solucionar o problema abaixo:
     taoa eum nmd hbi
 
     Explicação:
-    Depois de remover os espaços, a string tem 13 caracteres.  está entre 3 e 4, então a string é rescrita na forma de um grid com 4 linhas e 4 colunas:
+    Depois de remover os espaços, a string tem 13 caracteres. [A raíz quadrada de 13] está entre 3 e 4, então a string é rescrita na forma de um grid com 4 linhas e 4 colunas:
 
     tenh
     aumb
@@ -29,7 +29,7 @@ Para solucionar o problema, criamos a função encript( ), que ao receber uma st
 <ul>
     <li>remove os espaços existentes na string com o método embutido replace( ), armazenando a nova string sem espaços na variável local "t";</li>
     <li>calcula a raíz quadrada do comprimento de "t" utilizando a função sqrt( ) do módulo de matemática integrado do Python, e arredonda o resultado para cima com a função ceil( ) (também do módulo math), armazenando o valor na variável local "raiz_de_t";</li>
-    <li>percorre a string "t" por meio de uma estrutura de repetição aninhada cujo passo é "raiz_de_t", agrupando assim os itens de "t" em listas que representam as colunas do grid descrito no enunciado;</li>
+    <li>percorre a string "t" por meio de uma estrutura de repetição aninhada cujo passo é "raiz_de_t", agrupando assim os itens de "t" em listas que irão representar as colunas do grid descrito no enunciado, mas sem a necessidade de criá-lo na memória;</li>
     <li>converte para string cada uma das listas criadas ao longo das iterações, com o método embutido join( );</li>
     <li>e, por fim, armazena as strings obtidas em uma variável local (matriz), que será devolvida pela função ao final da execução.</li>
  </ul>
