@@ -7,7 +7,7 @@ Algoritmo criado em Python para solucionar o problema abaixo:
 
 <h2>Proposta de solução</h2>
 
-Após ler um número inteiro (n) digitado pelo usuário, uma estrutura de repetição percorre o intervalo de 1 a n, imprimindo a cada iteração o caractere '*' vezes o número atual (i), concatenado ao espaço (' ') vezes o resultado da expressão n - i:
+Após ler um número inteiro (n) digitado pelo usuário, uma estrutura de repetição percorre o intervalo de 1 a n, imprimindo a cada iteração o caractere '*' vezes o valor atual de "i", concatenado ao espaço (' ') vezes o resultado da expressão n - i:
 
 ```Python
 n = int(input('Digite um número inteiro: '))
@@ -16,10 +16,10 @@ for i in range(1, n + 1):
     print(f"{(n - i) * ' ' + i * '*'}")
 ```
 
-<h2>Para rodar a aplicação, siga a instruções abaixo:</h2>
+<h2>Para rodar a aplicação, siga as instruções abaixo:</h2>
 <ol>
     <li>Instale a última versão do Python;</li>
-    <li>Baixe o arquivo com o nosso algoritmo;</li>
+    <li>Baixe o arquivo com a extensão .py;</li>
     <li>Clique com o botão direito do mouse no arquivo baixado e selecione a opção "Edit with IDLE";</li>
     <li>Com o IDLE aberto, pressione a tecla F5 para rodar a aplicação.</li>
 </ol>

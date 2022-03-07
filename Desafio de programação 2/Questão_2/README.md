@@ -52,10 +52,10 @@ print(f'Saída:\n{pares}')
 ```
 
 
-<h2>Para rodar a aplicação, siga a instruções abaixo:</h2>
+<h2>Para rodar a aplicação, siga as instruções abaixo:</h2>
 <ol>
     <li>Instale a última versão do Python;</li>
-    <li>Baixe o arquivo com o nosso algoritmo;</li>
+    <li>Baixe o arquivo com a extensão .py;</li>
     <li>Clique com o botão direito do mouse no arquivo baixado e selecione a opção "Edit with IDLE";</li>
     <li>Com o IDLE aberto, pressione a tecla F5 para rodar a aplicação.</li>
 </ol>
